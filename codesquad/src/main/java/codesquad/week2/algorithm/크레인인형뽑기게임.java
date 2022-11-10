@@ -1,4 +1,4 @@
-package codesquad.week2;
+package codesquad.week2.algorithm;
 
 import java.util.Stack;
 
