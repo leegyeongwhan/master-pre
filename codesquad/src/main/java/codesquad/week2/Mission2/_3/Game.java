@@ -8,7 +8,8 @@ public class Game {
         return new Dice();
     }
 
-    public Gamer getGammer(int money, List<String > fruits) {
+    public Gamer getGammer(int money, List<String> fruits)
+    {
         return new Gamer(money, fruits);
     }
 }
