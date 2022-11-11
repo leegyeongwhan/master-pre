@@ -4,7 +4,6 @@ import codesquad.week2.Mission2._2.sebject.Subject;
 import codesquad.week2.Mission2._2.student.Student;
 
 public class RecordService {
-
     /**
      * Kim 학생은 2과목을 수강했습니다.
      * 총점은 200점이고 평균은 100점입니다
