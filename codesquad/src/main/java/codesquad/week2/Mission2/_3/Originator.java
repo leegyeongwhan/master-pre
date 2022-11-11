@@ -2,7 +2,6 @@ package codesquad.week2.Mission2._3;
 
 public class Originator {
     private Gamer state;
-    private int num;
 
     public Originator(Gamer m) {
         this.state = m;
@@ -12,7 +11,7 @@ public class Originator {
         return new Originator(state);
     }
 
-    private void setMemento(Memento memento) {
+    public void setMemento(Memento memento) {
         state = memento.getState();
     }
 
