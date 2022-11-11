@@ -9,9 +9,9 @@ public class _2번문제 {
         Abooks[3] = new Book("토지", "박경리");
         Abooks[4] = new Book("대변동", "제레드 다이아몬드");
 
-        Book[] A_1books = Abooks.clone();//깊은복사
+        Book[] A_1books = Abooks.clone();//얕은복사
 
-        Book[] Bbooks = Abooks.clone(); //깊은복사
+        Book[] Bbooks = Abooks.clone(); //
         Bbooks[5] = new Book("사피엔스", "유발 하라리");
 //
         Abooks[2] = new Book("그 많던 싱아는 누가 다 먹었을까", "박완서");
@@ -51,6 +51,41 @@ class Book {
                 "title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 '}';
+    }
+}
+
+ class CopyObject implements Cloneable {
+
+    private String name;
+    private int age;
+
+    public CopyObject() {
+    }
+
+    public CopyObject(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    protected CopyObject clone() throws CloneNotSupportedException {
+        return (CopyObject) super.clone();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
 
