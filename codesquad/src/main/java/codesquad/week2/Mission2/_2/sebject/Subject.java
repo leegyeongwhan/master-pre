@@ -22,30 +22,7 @@ public class Subject {
         this.subjectCnt = subjectList.length;
     }
 
-    public String getGuk() {
-        return guk;
-    }
-
-    public String getEng() {
-        return eng;
-    }
-
-    public int getSubjectCnt() {
-        for (int i = 0; i < subjects.length; i++) {
-            if (Integer.parseInt(subjects[i]) == 0) {
-                subjectCnt--;
-            }
-            subjectCnt++;
-        }
-        return subjectCnt;
-    }
-
     public String[] getSubjects() {
-
         return subjects;
-    }
-
-    public String getMath() {
-        return math;
     }
 }

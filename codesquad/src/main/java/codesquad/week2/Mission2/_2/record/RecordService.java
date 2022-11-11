@@ -1,4 +1,4 @@
-package codesquad.week2.Mission2._2;
+package codesquad.week2.Mission2._2.record;
 
 import codesquad.week2.Mission2._2.sebject.Subject;
 import codesquad.week2.Mission2._2.student.Student;
@@ -14,7 +14,7 @@ public class RecordService {
      */
     public void print(Student student, Subject subject) {
         System.out.println(student.getName() + "학생은" + getSubjectCount(subject) + "을수강했습니다");
-        System.out.println("총점은" + getSujectAllSum(subject) + "이고 평균은" + getSujectAvg(subject) + "입니다");
+        System.out.println("총점은" + getSubjectAllSum(subject) + "이고 평균은" + getSubjectAvg(subject) + "입니다");
         System.out.println();
     }
 
@@ -32,7 +32,7 @@ public class RecordService {
         return cnt;
     }
 
-    private String getSujectAvg(Subject subject) {
+    private String getSubjectAvg(Subject subject) {
         String[] subjects = subject.getSubjects();
         double avg = 0;
         int cnt = 0;
@@ -47,7 +47,7 @@ public class RecordService {
         return String.valueOf(avg);
     }
 
-    private String getSujectAllSum(Subject subject) {
+    private String getSubjectAllSum(Subject subject) {
         String[] subjects = subject.getSubjects();
         double sum = 0;
         for (int i = 0; i < subjects.length; i++) {

@@ -24,6 +24,7 @@ public class GamePlay {
             int[] gameDice = dice.getDice();
 
             if (money > memento.getState().getMoney()) {
+                originator.setMemento(memento);
                 Memento createMemento = originator.createMemento();
                 memento = createMemento;
             } else if (money < memento.getState().getMoney() / 2) {
